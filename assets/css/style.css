@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Default styles for the page, optimised for mobile first design */
-body {
+html, body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     background-color: #fff;
     color: #000;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 * {
@@ -15,4 +18,31 @@ body {
     padding: 0;
     border: 0;
     box-sizing: border-box;
+}
+
+#front-page {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    flex-grow;
+}
+
+#sidebar {
+    width: 25%;
+}
+
+#main {
+    display: flex;
+    flex-grow: 3;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+header, footer {
+    flex-grow: 0;
+    flex-shrink: 0;
 }
