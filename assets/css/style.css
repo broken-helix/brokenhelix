@@ -24,7 +24,6 @@ html, body {
     display: flex;
     width: 100%;
     align-items: stretch;
-    flex-grow;
 }
 
 #sidebar {
@@ -37,6 +36,7 @@ html, body {
     flex-grow: 5;
     flex-direction: column;
     background-color: gold;
+    justify-content: space-between;
 }
 
 main {
@@ -48,4 +48,32 @@ header, footer {
     flex-grow: 0;
     flex-shrink: 0;
     background-color: bisque;
+}
+
+#sections {
+    display: flex;
+    flex-grow: 2;
+}
+
+.section {
+    flex-grow: 1
+}
+
+#intro {
+    flex-grow: 3;
+}
+
+@media only screen and (max-width: 1024px) {
+    #sections {
+        flex-direction: column;
+    }
+    .section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #sidebar {
+        display: none;
+    }
 }
