@@ -1,3 +1,18 @@
+/* Google fonts script */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Default styles for the page, optimised for mobile first design */
 body {
-    background-color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
