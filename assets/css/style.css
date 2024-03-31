@@ -28,13 +28,15 @@ html, body {
 }
 
 #sidebar {
-    width: 25%;
+    flex-grow: 1;
+    background-color: darkgrey;
 }
 
 #main {
     display: flex;
-    flex-grow: 3;
+    flex-grow: 5;
     flex-direction: column;
+    background-color: gold;
 }
 
 main {
@@ -45,4 +47,5 @@ main {
 header, footer {
     flex-grow: 0;
     flex-shrink: 0;
+    background-color: bisque;
 }
