@@ -26,14 +26,9 @@ html, body {
     align-items: stretch;
 }
 
-#sidebar {
-    flex-grow: 1;
-    background-color: darkgrey;
-}
-
 #main {
     display: flex;
-    flex-grow: 5;
+    width: 100%;
     flex-direction: column;
     background-color: gold;
     justify-content: space-between;
@@ -52,7 +47,7 @@ header, footer {
 
 #sections {
     display: flex;
-    flex-grow: 2;
+    height: 100vh;
 }
 
 .section {
@@ -60,7 +55,7 @@ header, footer {
 }
 
 #intro {
-    flex-grow: 3;
+    height: 100vh;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -69,11 +64,5 @@ header, footer {
     }
     .section {
         width: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #sidebar {
-        display: none;
     }
 }
